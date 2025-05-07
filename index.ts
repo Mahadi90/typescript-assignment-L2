@@ -14,7 +14,7 @@ function formatString(input: string, toUpper?: boolean): string {
 
 
 type ItemType = {
-    productName: string,
+    title: string,
     rating: number
 }
 
