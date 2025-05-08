@@ -13,12 +13,9 @@ function formatString(input: string, toUpper?: boolean): string {
 
 
 
-type ItemType = {
-    title: string,
-    rating: number
-}
 
-function filterByRating(items: ItemType[]): ItemType[] {
+
+function filterByRating(items: {title: string,rating: number}[]): {title: string,rating: number}[] {
 
     return items.filter(item => item.rating >= 4)
 
@@ -77,9 +74,8 @@ const myCar = new Car("Toyota", 2020, "Saka Laka Boom Boom");
 
 
 
-type valueType = string | number
 
-function processValue(value: valueType): number {
+function processValue(value: string | number): number {
     if (typeof value === 'string') {
         return value.length
     }
@@ -88,11 +84,7 @@ function processValue(value: valueType): number {
 
 
 
-const products = [
-    { name: "Pen", price: 10 },
-    { name: "Notebook", price: 25 },
-    { name: "Bag", price: 50 }
-];
+
 
 interface Product {
     name: string;
