@@ -8,7 +8,7 @@ function formatString(input: string, toUpper?: boolean): string {
     }
 }
 
-// console.log(formatString('Mahadi', true));
+
 
 
 
@@ -24,15 +24,7 @@ function filterByRating(items: ItemType[]): ItemType[] {
 
 }
 
-const laptops = [
-    { productName: 'Lenovo', rating: 4.5 },
-    { productName: 'Mahadi', rating: 5 },
-    { productName: 'HP', rating: 4 },
-    { productName: 'Dell', rating: 3.5 },
-    { productName: 'Asus', rating: 2 }
-]
 
-// console.log(filterByRating(laptops));
 
 
 
@@ -45,13 +37,14 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
     return finalArray
 }
 
-//   console.log(concatenateArrays([1, 2], [3, 4], [5]));
+
+
 
 
 
 class Vehicle {
     private make: string;
-    year: number
+    private year: number
 
     constructor(make: string, year: number) {
         this.make = make;
@@ -61,7 +54,6 @@ class Vehicle {
         return `Make: ${this.make}, Year: ${this.year}`
     }
 }
-
 
 
 class Car extends Vehicle {
@@ -78,7 +70,10 @@ class Car extends Vehicle {
 }
 
 const myCar = new Car("Toyota", 2020, "Saka Laka Boom Boom");
-// console.log(myCar.getModel());
+
+
+
+
 
 
 
@@ -90,7 +85,7 @@ function processValue(value: valueType): number {
     }
     return value * 2
 }
-// console.log(processValue('Mahadi'));
+
 
 
 const products = [
@@ -120,7 +115,7 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
 
 }
 
-// console.log(getMostExpensiveProduct(products));
+
 
 
 enum Day {
@@ -140,7 +135,7 @@ function getDayType(day: Day): string {
     return 'Weekday'
 }
 
-// console.log(getDayType(Day.Sunday))
+
 
 
 
@@ -156,4 +151,3 @@ async function squareAsync(n: number): Promise<number> {
     });
 }
 
-// squareAsync(-4).catch(console.error)
