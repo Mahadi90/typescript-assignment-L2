@@ -66,7 +66,7 @@ class Car extends Vehicle {
     }
 }
 
-const myCar = new Car("Toyota", 2020, "Saka Laka Boom Boom");
+
 
 
 
